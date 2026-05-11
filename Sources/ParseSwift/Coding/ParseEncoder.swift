@@ -336,6 +336,7 @@ public struct ParseEncoder {
             return currentData
         }
 
+        let encodedCurrentKeys = Set(current.keys)
         current = current.filter { key, value in
             guard let originalValue = original[key] else {
                 return true
@@ -343,7 +344,7 @@ public struct ParseEncoder {
             return !Self.jsonValue(value, isEqualTo: originalValue)
         }
         original.keys.forEach { key in
-            if current[key] == nil {
+            if !encodedCurrentKeys.contains(key) {
                 current[key] = ["__op": Operation.delete.rawValue]
             }
         }
