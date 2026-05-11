@@ -4,9 +4,6 @@
 [Full Changelog](https://github.com/parse-community/Parse-Swift/compare/4.14.2...main), [Documentation](https://swiftpackageindex.com/parse-community/Parse-Swift/main/documentation/parseswift)
 * _Contributing to this repo? Add info about your change here to be included in the next release_
 
-__New features__
-- Allow saved ParseObjects to send only directly mutated properties without requiring `mergeable` or `set()`.
-
 ### 4.14.2
 [Full Changelog](https://github.com/parse-community/Parse-Swift/compare/4.14.1...4.14.2), [Documentation](https://swiftpackageindex.com/parse-community/Parse-Swift/4.14.2/documentation/parseswift)
 

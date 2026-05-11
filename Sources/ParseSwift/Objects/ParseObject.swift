@@ -18,6 +18,7 @@ import Foundation
  Since you are using value types the compiler will assist you with conforming to the `ParseObject` protocol.
  After a `ParseObject` is saved, created, fetched, or queried from a Parse Server, the SDK stores a snapshot
  of the object. Direct property mutations can then send only changed fields instead of replacing all fields.
+ Setting an optional property to `nil` sends a Parse `Delete` operation for that field.
  Developers can still call the `mergeable` property or `set()` method explicitly when they want an empty
  update copy.
  
